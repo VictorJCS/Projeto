@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>Site sobre os ODS</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Bem vindo ao site!</h1>
-        <p>Aqui você aprenderá um pouco sobre ODS! </p>
+        <h1>Bem-vindo ao site dos ODS!</h1>
+        <p>Saiba mais sobre os Objetivos de Desenvolvimento Sustentável e como podemos transformar o mundo juntos!</p>
     </header>
     <nav>
         <ul>
@@ -20,31 +20,67 @@
             <li><a href="contact.html">Contato</a></li>
         </ul>
     </nav>
+    
+    <section id="banner">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/ods-banner1.jpg" style="width:100%">
+                <div class="text">ODS 1: Erradicação da Pobreza</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/ods-banner2.jpg" style="width:100%">
+                <div class="text">ODS 2: Fome Zero e Agricultura Sustentável</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/ods-banner3.jpg" style="width:100%">
+                <div class="text">ODS 3: Saúde e Bem-estar</div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </section>
-    <div class="banner">
-        <h1>Transformando o mundo através dos ODS</h1>
-    </div>
+
     <section>
         <h2>O que são os ODS?</h2>
         <p>Os Objetivos de Desenvolvimento Sustentável (ODS) são um apelo universal para acabar com a pobreza, proteger o planeta e garantir que todas as pessoas desfrutem de paz e prosperidade até 2030.</p>
     </section>
-    <section>
-        <h2>Conheça os ODS!</h2>
-        <div class="ods-container">
-            <div class="ods-item">
-                <h3>ODS 1</h3>
-                <p>Erradicação da Pobreza</p>
+
+    <section id="recent-items">
+        <h2>Iniciativas Recentes dos ODS</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Projeto de Erradicação da Pobreza</h3>
+                <p>Uma iniciativa global focada em reduzir a pobreza extrema até 2030.</p>
+                <span>Publicado em: 01/10/2024</span>
             </div>
-            <div class="ods-item">
-                <h3>ODS 2</h3>
-                <p>Fome Zero e Agricultura Sustentável</p>
+            <div class="grid-item">
+                <h3>Agricultura Sustentável</h3>
+                <p>Fome Zero através de práticas agrícolas inovadoras e sustentáveis.</p>
+                <span>Publicado em: 05/10/2024</span>
             </div>
-            <div class="ods-item">
-                <h3>ODS 3</h3>
-                <p>Saúde e Bem-estar</p>
+            <div class="grid-item">
+                <h3>Promoção de Saúde e Bem-estar</h3>
+                <p>Melhorando a saúde e a qualidade de vida em áreas vulneráveis.</p>
+                <span>Publicado em: 10/10/2024</span>
             </div>
         </div>
     </section>
+
+    <section id="featured-items">
+        <h2>Projetos em Destaque dos ODS</h2>
+        <div class="featured-container">
+            <div class="featured-item">
+                <h3>Educação de Qualidade para Todos</h3>
+                <p>Este projeto visa fornecer acesso à educação de qualidade em comunidades remotas e subdesenvolvidas.</p>
+            </div>
+            <div class="featured-item">
+                <h3>Energia Acessível e Limpa</h3>
+                <p>Uma iniciativa para promover fontes de energia renováveis e acessíveis ao redor do mundo.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>© 2024 - Objetivos de Desenvolvimento Sustentável - Todos os direitos reservados.</p>
     </footer>
