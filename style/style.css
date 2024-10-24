@@ -1,9 +1,9 @@
 :root {
-    --cor-fundo: #f5f5f5;
-    --cor-texto: #333;
+    --cor-fundo: #9ad1d4;
+    --cor-texto: #41220e;
     --cor-escura: #222;
     --cor-branca: #fff;
-    --cor-secundaria: #666;
+    --cor-secundaria: #666666;  
     --cor-destaque: #007bff;
     --cor-destaque-hover: #0056b3;
 }
@@ -38,7 +38,7 @@ header button:hover {
 }
 
 nav {
-    background-color: #444;
+    background-color: #0d3b19; /* Verde escuro */
 }
 
 nav ul {
@@ -65,6 +65,14 @@ nav ul li a:hover {
     background-color: var(--cor-secundaria);
 }
 
+.slide-image {
+    width: 100%; /* Ajusta a largura para 100% do contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-height: 240px; /* Define uma altura máxima */
+    object-fit: contain; /* Ajusta a imagem sem cortar, mantendo a proporção */
+    display: block; /* Remove espaços indesejados em torno da imagem */
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -76,7 +84,7 @@ nav ul li a:hover {
     background-color: var(--cor-branca);
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -87,17 +95,41 @@ footer {
     position: relative;
 }
 
+/* Estilos para o modo escuro */
 body.dark-mode {
-    background-color: var(--cor-escura);
-    color: #ddd;
+    --cor-fundo: #020202; /* Fundo escuro */
+    --cor-texto: #ffffff; /* Texto claro */
+    --cor-escura: #080808; /* Cor escura */
+    --cor-branca: #000000; /* Branco */
+    --cor-secundaria: #bbbbbb; /* Cinza claro */
+    --cor-destaque: #1e90ff; /* Azul claro */
+    --cor-destaque-hover: #1c86ee; /* Azul escuro */
+    
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
 }
 
-header.dark-mode, nav.dark-mode, footer.dark-mode {
-    background-color: #111;
+header.dark-mode {
+    background-color: var(--cor-texto);
+    color: var(--cor-branca);
+}
+
+nav.dark-mode {
+    background-color: #272727; /* Cor do nav no modo escuro */
 }
 
 nav.dark-mode ul li a {
-    color: #ddd;
+    color: var(--cor-branca);
+}
+
+.grid-item.dark-mode {
+    background-color: #1c212e; /* Fundo dos itens na grade no modo escuro */
+    color: var(--cor-branca);
+}
+
+footer.dark-mode {
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
 }
 
 .slideshow-container {
@@ -127,7 +159,7 @@ nav.dark-mode ul li a {
     position: absolute;
     bottom: 8px;
     left: 16px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(17, 68, 26, 0.5);
 }
 
 .prev, .next {
@@ -141,24 +173,4 @@ nav.dark-mode ul li a {
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    
-    header {
-        text-align: left;
-    }
-}
+    user-select:
