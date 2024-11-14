@@ -1,3 +1,7 @@
+/**Olá, bem-vindos ao script.js. De forma resumida, essa página terá as principais funções
+em JavaScript, fornecendo interatividade ao usuário através do HTML.**/
+
+
 let slideIndex = 0;
 showSlides();
 
@@ -23,7 +27,7 @@ function plusSlides(n) {
     }
     showSlides();
 }
-
+//FUNÇÃO "NOTURNA":
 document.getElementById("dark-mode-toggle").addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
 });
